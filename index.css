@@ -1,0 +1,89 @@
+body{
+    background: linear-gradient(50deg,#1C325B,#1A1A1D  50% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #B9E5E8;
+    border-radius: 16px;
+    box-shadow: 0 0 12px #FFF8DE;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titel{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.timer{
+    font-size: 1.5rem;
+    background-color: #F8FAFC;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgb(0, 0, 0.1);
+    padding: 8px;
+    animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse{
+    from{transform: scale(1);background-color: #009990;}
+    to{transform: scale(1.05);background-color: #ffffff;}
+}
+.timer span{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.controls{
+    display: flex;
+    gap: 1rem;
+}
+button{
+    font-size: 1.5rem;
+    background-color: #08C2FF;
+    padding: 0.75rem 1.5rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover{
+background-color: #15B392;
+}
+.lap-titel{
+    font-size: 1.5rem;
+
+}
+.laps{
+    width: 100%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-height: 200px;
+    box-shadow: 0 0 12px rgb(0, 0, 0.1);
+}
+li{
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+li:last-child{
+    border-bottom: none;
+}
+li span{
+    font-weight: 700;
+}
